@@ -1,11 +1,11 @@
 {
-  "markdownSha": "1593acea0f455c6839e6f23a43a06c18c1938d4c8f56e3675087eb8c1d611a55",
-  "words": 322578,
+  "markdownSha": "98161c3a8a67b08242bea9124002b92f86818d3fdecaec52d2d56ff098fdcac6",
+  "words": 322636,
   "blocks": {
     "heading": 71,
     "quote": 953,
     "list": 58,
-    "paragraph": 2485
+    "paragraph": 2459
   },
   "headings": [
     "PERMANENT SUBCOMMITTEE ON INVESTIGATIONS",
@@ -80,7 +80,7 @@
     "# #",
     "Notes"
   ],
-  "footnotes": 2855,
+  "footnotes": 2848,
   "pageMarkers": 628,
   "poppler": "26.08.0"
 }

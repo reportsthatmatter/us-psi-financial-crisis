@@ -1,6 +1,6 @@
 # Fidelity review — Wall Street and the Financial Crisis: Anatomy of a Financial Collapse
 
-Pages: 645  ·  Footnotes: 2855  ·  Auto-fixes applied: 20  ·  Human corrections: 0
+Pages: 645  ·  Footnotes: 2848  ·  Auto-fixes applied: 20  ·  Human corrections: 0
 
 **161 open**, 0 reviewed and judged correct.
 
