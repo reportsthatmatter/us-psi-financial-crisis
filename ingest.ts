@@ -1,4 +1,4 @@
-import { listedHeadings, pipeline } from "@rtm/ingest";
+import { listedHeadings, citationRunOver, pipeline } from "@rtm/ingest";
 
 /**
  * How this report is built. Owned by the report: every decision that shaped
@@ -23,5 +23,12 @@ export default pipeline({
     // CONFIDENTIAL - S&P DISCUSSION PURPOSES ONLY"). Its contents lists every
     // section and subsection, so only a heading it names is read as one.
     listedHeadings(),
+    // ~17 notes run over an entire page or two — a block quotation, its
+    // source line, more prose — none of it double-spaced, so the ordinary
+    // run-over check never fires (reportsthatmatter-626). This report's
+    // footnotes are dense with Bates numbers and hearing exhibits, so a
+    // paragraph that dense joins the run-over; the first that reads as
+    // ordinary prose stops it.
+    citationRunOver(),
   ],
 });
