@@ -1,11 +1,11 @@
 {
-  "markdownSha": "ff31184473b5864773d5ee7472184ff6a236249e4c1ae7c7906ff6eafeb04789",
-  "words": 322650,
+  "markdownSha": "ed7874a45af2ee01595226326d2ba5cc876c8e0da6c59ae6e90a86e9ed3a4776",
+  "words": 322663,
   "blocks": {
-    "heading": 57,
-    "quote": 953,
+    "heading": 55,
+    "quote": 952,
     "list": 58,
-    "paragraph": 2426
+    "paragraph": 2428
   },
   "headings": [
     "PERMANENT SUBCOMMITTEE ON INVESTIGATIONS",
@@ -30,7 +30,6 @@
     "ERIN HELLING TANVI ZAVERI",
     "MARY D. ROBERTSON",
     "TABLE OF CONTENTS",
-    "# # v",
     "EXECUTIVE SUMMARY",
     "Subcommittee Investigation",
     "BACKGROUND",
@@ -63,10 +62,9 @@
     "CDO Marks",
     "Timberwolf I",
     "Preventing Investment Bank Abuses",
-    "# #",
     "Notes"
   ],
-  "footnotes": 2848,
+  "footnotes": 2849,
   "pageMarkers": 627,
   "poppler": "26.08.0"
 }
