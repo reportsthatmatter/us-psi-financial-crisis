@@ -1,4 +1,4 @@
-import { listedHeadings, citationRunOver, pipeline } from "@rtm/ingest";
+import { listedHeadings, citationRunOver, escapeLeadingHash, footnoteGap, romanFolios, pipeline } from "@rtm/ingest";
 
 /**
  * How this report is built. Owned by the report: every decision that shaped
@@ -30,5 +30,18 @@ export default pipeline({
     // paragraph that dense joins the run-over; the first that reads as
     // ordinary prose stops it.
     citationRunOver(),
+    // The press release's end mark "# # #" opened a paragraph and rendered as
+    // a heading. Needs the @rtm/ingest release that carries escapeLeadingHash
+    // (ingest PR #26, reportsthatmatter-6zo).
+    // Embedded charts leave a wide gap that moved a note out of its foot-of-page
+    // place: note 1864 under a chart placeholder (p.449) and note 2095's tail
+    // under a gap that ends mid-sentence (p.497) printed in the body
+    // (reportsthatmatter-74p). Needs the @rtm/ingest release with footnoteGap.
+    footnoteGap(),
+    escapeLeadingHash(),
+    // The front matter is folioed ii, iii, iv in roman numerals, which stayed
+    // in the text. Needs the @rtm/ingest release that carries romanFolios
+    // (reportsthatmatter-cbr).
+    romanFolios(),
   ],
 });
