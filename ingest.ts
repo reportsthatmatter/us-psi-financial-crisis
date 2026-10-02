@@ -1,4 +1,4 @@
-import { listedHeadings, citationRunOver, escapeLeadingHash, footnoteGap, romanFolios, pipeline } from "@rtm/ingest";
+import { quoteListRunOns, listedHeadings, citationRunOver, escapeLeadingHash, footnoteGap, romanFolios, pipeline } from "@rtm/ingest";
 
 /**
  * How this report is built. Owned by the report: every decision that shaped
@@ -18,6 +18,8 @@ export default pipeline({
     { path: "archive/PSI REPORT - Wall Street & the Financial Crisis-Anatomy of a Financial Collapse (FINAL 5-10-11).pdf", sha256: "3dec3dfa693805d889836db496aa0691e7e8964427524ea8137792362cc81d84" },
   ],
   passes: [
+    // A quotation running over a page arrives as two (reportsthatmatter-38s.9).
+    quoteListRunOns(),
     // The report quotes exhibits whose captions and memo lines look like
     // headings ("WALK-UP MUSIC FOR DAVID SCHNEIDER", "PRIVILEGED AND
     // CONFIDENTIAL - S&P DISCUSSION PURPOSES ONLY"). Its contents lists every
