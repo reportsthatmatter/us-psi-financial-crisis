@@ -1,0 +1,114 @@
+# Golden pages: ground truth for this report, read off the PDF page image and checked by `pnpm ingest verify`.
+# Format and rules: @rtm/ingest src/golden.ts and the site's docs/quality-harness.md ("Golden pages").
+# A page marked xfail is a known pipeline defect: it stays red here, verify stays green, and the bead says why.
+pages:
+  # An ordinary page with a numbered-style subhead ("C.") and two markers; the last paragraph runs on to the next page.
+  - pdf: 65
+    printed: 58
+    verified_by: "Claude (Sonnet 5.5), 2026-10-02, against the page image"
+    features: [ordinary, I]
+    blocks:
+      - paragraph: {start: "On September 8, 2008, Washington Mutual signed", end: "Allen Fishman was appointed his replacement.", notes: [137]}
+      - paragraph: {start: "On September 15, 2008, Lehman Brothers declared bankruptcy", end: "regulatory concerns about the bank’s liquidity and viability intensified."}
+      - paragraph: {start: "Because of its liquidity problems and poor quality assets", end: "declared bankruptcy soon after."}
+      - heading: "C. High Risk Lending Strategy"
+      - paragraph: {start: "In 2004, Washington Mutual ramped up high risk home loan originations", end: "unable to find buyers for its high risk loans or related securities."}
+      - paragraph: {start: "The formal initiation of WaMu’s High Risk Lending Strategy", continues: true, notes: [138]}
+    footnotes: [137, 138]
+    markers: [137, 138]
+  # A parenthesised subhead "(3)" the pipeline reads as a paragraph, then a slide quoted in indented blocks with dash bullets.
+  - pdf: 69
+    printed: 62
+    verified_by: "Claude (Sonnet 5.5), 2026-10-02, against the page image"
+    features: [I, D]
+    xfail: reportsthatmatter-bi5
+    xfail_only: [blocks]
+    blocks:
+      - heading: "(3) Definition of High Risk Lending"
+      - paragraph: {start: "As part of the 2005 presentation to the Board of Directors", end: "defining “Higher Risk Lending”:", notes: [159]}
+      - quote: {start: "“For the purpose of establishing concentration limits", end: "will be presented for Board approval."}
+      - quote: {start: "“The initial definition is ‘Consumer Loans to Higher Risk Borrowers’", end: "comprised of:"}
+      - quote: {start: "-Subprime loans, or all loans originated by Long Beach Mortgage", end: "Specialty Mortgage Finance program"}
+      - quote: {start: "-SFR [Single Family Residential] and Consumer Loans", end: "low credit scores at origination.”", notes: [160]}
+      - paragraph: {start: "A footnote on the slide defined", end: "and other consumer loans.", notes: [161]}
+      - paragraph: {start: "While the January 2005 presentation promised", end: "a definition of higher risk loans.", notes: [162]}
+      - paragraph: {start: "Higher risk loans were defined as single family residence mortgages", continues: true}
+    footnotes: [159, 160, 161, 162]
+    markers: [159, 160, 161, 162]
+  # An exhibit (a script excerpt) whose bold title once became a heading in the contents ("WALK-UP MUSIC FOR DAVID SCHNEIDER", h0l).
+  - pdf: 153
+    printed: 146
+    verified_by: "Claude (Sonnet 5.5), 2026-10-02, against the page image"
+    features: [H, D]
+    blocks:
+      - quote: {start: "WALK-UP MUSIC FOR DAVID SCHNEIDER", end: "WALK-UP MUSIC FOR DAVID SCHNEIDER"}
+      - quote: {start: "DAVID SCHNEIDER Thank you ladies and gentlemen", end: "this very special Awards Evening."}
+      - quote: {start: "Wow, could you feel the energy and excitement", end: "Talk about star power!"}
+      - quote: {start: "And it was great fun to learn so much more", end: "and at the bar."}
+      - quote: {start: "But don’t worry. I’m told that the age-old tradition", end: "And who am I to mess with tradition?"}
+      - quote: {start: "Tonight we are gathered together to pay the highest respects", end: "the President’s Club Class of 2005."}
+      - quote: {start: "And of course I want to pay special homage", end: "another star of another box office sensation.”", notes: [545]}
+      - paragraph: {start: "This 2005 awards ceremony was attended by WaMu loan officers", end: "President’s Club in 2005 and 2006."}
+      - paragraph: {start: "When asked about the sales culture at the bank", end: "called, “The Power of Yes”:"}
+      - quote: {start: "“I stood in front of thousands of senior Washington Mutual managers", end: "than anything I can tell you.”"}
+    footnotes: [545]
+    markers: [545]
+  # A bold-numbered subhead "(3) Examination Process" fused into a quotation with the paragraph below it (class A/I); two markers.
+  - pdf: 174
+    printed: 167
+    verified_by: "Claude (Sonnet 5.5), 2026-10-02, against the page image"
+    features: [A, I, E]
+    xfail: reportsthatmatter-bi5
+    xfail_only: [blocks, must_not_be_quote]
+    blocks:
+      - paragraph: {start: "For the eight largest insured institutions at the time", end: "to oversee the bank."}
+      - paragraph: {start: "During the years examined by the Subcommittee", end: "Stephen Funaro."}
+      - heading: "(3) Examination Process"
+      - paragraph: {start: "The stated mission of OTS was", end: "other parties.", notes: [604]}
+      - paragraph: {start: "To carry out its mission, OTS traditionally conducted", end: "safety and soundness.", notes: [605]}
+      - paragraph: {start: "At Washington Mutual, OTS examiners conducted both on-site", continues: true}
+    footnotes: [604, 605]
+    markers: [604, 605]
+    must_not_be_quote: ["The stated mission of OTS was"]
+  # A table (ratings downgrades) set between paragraphs, and a lettered subhead below it.
+  - pdf: 274
+    printed: 267
+    verified_by: "Claude (Sonnet 5.5), 2026-10-02, against the page image"
+    features: [tables, A, I]
+    xfail: reportsthatmatter-05c, reportsthatmatter-b94
+    xfail_only: [markers, must_contain, must_not_be_quote]
+    headings: ["D. Ratings Deficiencies"]
+    footnotes: [1034, 1035]
+    markers: [1034, 1035]
+    must_contain:
+      - "One more striking example involved a $1.6 billion hybrid CDO known as Delphinus CDO 2007-1, Ltd."
+      - "Vintage Prime Fixed Prime ARM Alt-A Fixed Alt-A ARM Option ARM Subprime 2004 3% 9% 10% 17% 50% 11%"
+    must_not_be_quote: ["Percent of the Original AAA Universe", "Source: BlackRock Solutions"]
+  # A paragraph and a quotation, with the page's long multi-paragraph note 1770 carried to the next page.
+  - pdf: 438
+    printed: 431
+    verified_by: "Claude (Sonnet 5.5), 2026-10-02, against the page image"
+    features: [E, D, F]
+    xfail: reportsthatmatter-b94
+    xfail_only: [blocks, markers]
+    continues_previous: true
+    opens_with: "position included the $9 billion AAA ABX short"
+    blocks:
+      - paragraph: {start: "Bear Stearns Hedge Fund Collapse. The collapse of the Bear Stearns hedge funds", end: "one Goldman employee remarked:", notes: [1769]}
+      - quote: {start: "“In total these two portfolios add up to roughly", end: "implications would be pretty severe.”", notes: [1770]}
+    footnotes: [1769, 1770]
+    markers: [1769, 1770]
+    must_not_contain: ["In addition to the markdowns in April and May", "Mr. Swenson had urged larger markdowns"]
+  # The run-over of note 1770 (an email exchange, three indented paragraphs) is printed above notes 1771-1775: none of it is body.
+  - pdf: 439
+    printed: 432
+    verified_by: "Claude (Sonnet 5.5), 2026-10-02, against the page image"
+    features: [E, D]
+    xfail: reportsthatmatter-07k
+    xfail_only: [blocks, markers, must_not_contain]
+    blocks:
+      - paragraph: {start: "On June 8, 2007, Mr. Sparks received an urgent early morning email", end: "The CDO unwind has only begun.”", notes: [1771, 1772, 1773]}
+      - paragraph: {start: "Around June 12, 2007, public news accounts indicated", end: "total collapse.", notes: [1774, 1775]}
+    footnotes: [1771, 1772, 1773, 1774, 1775]
+    markers: [1771, 1772, 1773, 1774, 1775]
+    must_not_contain: ["Told Egol I’m comfortable w/ the prices", "Mr. Swenson: He is done"]
