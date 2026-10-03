@@ -75,8 +75,8 @@ pages:
     printed: 267
     verified_by: "Claude (Sonnet 5.5), 2026-10-02, against the page image"
     features: [tables, A, I]
-    xfail: reportsthatmatter-05c, reportsthatmatter-b94
-    xfail_only: [markers, must_contain, must_not_be_quote]
+    xfail: reportsthatmatter-05c
+    xfail_only: [must_contain, must_not_be_quote]
     headings: ["D. Ratings Deficiencies"]
     footnotes: [1034, 1035]
     markers: [1034, 1035]
@@ -89,8 +89,6 @@ pages:
     printed: 431
     verified_by: "Claude (Sonnet 5.5), 2026-10-02, against the page image"
     features: [E, D, F]
-    xfail: reportsthatmatter-b94
-    xfail_only: [blocks, markers]
     continues_previous: true
     opens_with: "position included the $9 billion AAA ABX short"
     blocks:
@@ -105,7 +103,7 @@ pages:
     verified_by: "Claude (Sonnet 5.5), 2026-10-02, against the page image"
     features: [E, D]
     xfail: reportsthatmatter-07k
-    xfail_only: [blocks, markers, must_not_contain]
+    xfail_only: [blocks, must_not_contain]
     blocks:
       - paragraph: {start: "On June 8, 2007, Mr. Sparks received an urgent early morning email", end: "The CDO unwind has only begun.”", notes: [1771, 1772, 1773]}
       - paragraph: {start: "Around June 12, 2007, public news accounts indicated", end: "total collapse.", notes: [1774, 1775]}
