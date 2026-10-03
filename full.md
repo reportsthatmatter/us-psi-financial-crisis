@@ -3326,7 +3326,7 @@ financial markets and the economy, and safeguard the Deposit Insurance Fund, thi
 
 %%page 242%%
 
-3. Strengthen CAMELS Ratings. Federal banking regulators should undertake a comprehensive review of the CAMELS ratings system to produce ratings that signal whether an institution is expected to operate in a safe and sound manner over a specified period of time, asset quality ratings that reflect embedded risks rather than short term profits, management ratings that reflect any ongoing failure to correct identified deficiencies, and composite ratings that discourage systemic risks. 4. Evaluate Impacts of High Risk Lending. The Financial Stability Oversight Council should undertake a study to identify high risk lending practices at financial institutions, and evaluate the nature and significance of the impacts that these practices may have on U.S. financial systems as a whole.
+3\. Strengthen CAMELS Ratings. Federal banking regulators should undertake a comprehensive review of the CAMELS ratings system to produce ratings that signal whether an institution is expected to operate in a safe and sound manner over a specified period of time, asset quality ratings that reflect embedded risks rather than short term profits, management ratings that reflect any ongoing failure to correct identified deficiencies, and composite ratings that discourage systemic risks. 4. Evaluate Impacts of High Risk Lending. The Financial Stability Oversight Council should undertake a study to identify high risk lending practices at financial institutions, and evaluate the nature and significance of the impacts that these practices may have on U.S. financial systems as a whole.
 
 %%page 243%%
 
@@ -3372,23 +3372,23 @@ In connection with the hearing, the Subcommittee released a joint memorandum fro
 
 CDO securities, delaying thousands of rating downgrades and allowing those securities to carry inflated ratings that could mislead investors.
 
-4. Failure to Factor in Fraud, Laxity, or Housing Bubble. From 2004 to 2007,
+4\. Failure to Factor in Fraud, Laxity, or Housing Bubble. From 2004 to 2007,
 
 Moody's and S&P knew of increased credit risks due to mortgage fraud, lax underwriting standards, and unsustainable housing price appreciation, but failed adequately to incorporate those factors into their credit rating models.
 
-5. Inadequate Resources. Despite record profits from 2004 to 2007, Moody's and
+5\. Inadequate Resources. Despite record profits from 2004 to 2007, Moody's and
 
 S&P failed to assign sufficient resources to adequately rate new products and test the accuracy of existing ratings.
 
-6. Mass Downgrades Shocked Market. Mass downgrades by Moody's and S&P, including downgrades of hundreds of subprime RMBS over a few days in July 2007, downgrades by Moody's of CDOs in October 2007, and actions taken (including downgrading and placing securities on credit watch with negative implications) by
+6\. Mass Downgrades Shocked Market. Mass downgrades by Moody's and S&P, including downgrades of hundreds of subprime RMBS over a few days in July 2007, downgrades by Moody's of CDOs in October 2007, and actions taken (including downgrading and placing securities on credit watch with negative implications) by
 
 S&P on over 6,300 RMBS and 1,900 CDOs on one day in January 2008, shocked the financial markets, helped cause the collapse of the subprime secondary market, triggered sales of assets that had lost investment grade status, and damaged holdings of financial firms worldwide, contributing to the financial crisis.
 
-7. Failed Ratings. Moody's and S&P each rated more than 10,000 RMBS securities from 2006 to 2007, downgraded a substantial number within a year, and, by 2010, had downgraded many AAA ratings to junk status.
+7\. Failed Ratings. Moody's and S&P each rated more than 10,000 RMBS securities from 2006 to 2007, downgraded a substantial number within a year, and, by 2010, had downgraded many AAA ratings to junk status.
 
-8. Statutory Bar. The SEC is barred by statute from conducting needed oversight into the substance, procedures, and methodologies of the credit rating models.
+8\. Statutory Bar. The SEC is barred by statute from conducting needed oversight into the substance, procedures, and methodologies of the credit rating models.
 
-9. Legal Pressure for AAA Ratings. Legal requirements that some regulated entities, such as banks, broker-dealers, insurance companies, pension funds, and others, hold assets with AAA or investment grade credit ratings, created pressure on credit rating agencies to issue inflated ratings making assets eligible for purchase by those entities.
+9\. Legal Pressure for AAA Ratings. Legal requirements that some regulated entities, such as banks, broker-dealers, insurance companies, pension funds, and others, hold assets with AAA or investment grade credit ratings, created pressure on credit rating agencies to issue inflated ratings making assets eligible for purchase by those entities.
 
 %%page 247%%
 
@@ -4305,11 +4305,11 @@ To further strengthen the accuracy of credit ratings and reduce systemic risk, t
 
 %%page 317%%
 
-5. Strengthen Disclosure. The SEC should exercise its authority under the new Section
+5\. Strengthen Disclosure. The SEC should exercise its authority under the new Section
 
 78o-7(s) of Title 15 to ensure that the credit rating agencies complete the required new ratings forms by the end of the year and that the new forms provide comprehensible, consistent, and useful ratings information to investors, including by testing the proposed forms with actual investors.
 
-6. Reduce Ratings Reliance. Federal regulators should reduce the federal government's reliance on privately issued credit ratings.
+6\. Reduce Ratings Reliance. Federal regulators should reduce the federal government's reliance on privately issued credit ratings.
 
 %%page 318%%
 
@@ -7978,15 +7978,15 @@ To prevent investment bank abuses and protect the U.S. financial system from fut
 
 %%page 639%%
 
-1. Review Structured Finance Transactions. Federal regulators should review the
+1\. Review Structured Finance Transactions. Federal regulators should review the
 
 RMBS, CDO, CDS, and ABX activities described in this Report to identify any violations of law and to examine ways to strengthen existing regulatory prohibitions against abusive practices involving structured finance products.
 
-2. Narrow Proprietary Trading Exceptions. To ensure a meaningful ban on proprietary trading under Section 619, any exceptions to that ban, such as for marketmaking or risk-mitigating hedging activities, should be strictly limited in the implementing regulations to activities that serve clients or reduce risk.
+2\. Narrow Proprietary Trading Exceptions. To ensure a meaningful ban on proprietary trading under Section 619, any exceptions to that ban, such as for marketmaking or risk-mitigating hedging activities, should be strictly limited in the implementing regulations to activities that serve clients or reduce risk.
 
-3. Design Strong Conflict of Interest Prohibitions. Regulators implementing the conflict of interest prohibitions in Sections 619 and 621 should consider the types of conflicts of interest in the Goldman Sachs case study, as identified in Chapter VI(C)(6) of this Report.
+3\. Design Strong Conflict of Interest Prohibitions. Regulators implementing the conflict of interest prohibitions in Sections 619 and 621 should consider the types of conflicts of interest in the Goldman Sachs case study, as identified in Chapter VI(C)(6) of this Report.
 
-4. Study Bank Use of Structured Finance. Regulators conducting the banking activities study under Section 620 should consider the role of federally insured banks in designing, marketing, and investing in structured finance products with risks that cannot be reliably measured and naked credit default swaps or synthetic financial instruments.
+4\. Study Bank Use of Structured Finance. Regulators conducting the banking activities study under Section 620 should consider the role of federally insured banks in designing, marketing, and investing in structured finance products with risks that cannot be reliably measured and naked credit default swaps or synthetic financial instruments.
 
 \# # #
 
