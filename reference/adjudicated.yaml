@@ -1,0 +1,342 @@
+report: us-psi-financial-crisis
+adjudicated: 2026-10-03
+by: "Claude (Opus 5.5) subagent, blind to the rules' call, reading the page images; every disagreement with the pipeline re-read"
+method: "Mini-reference for a report with no clean edition (38s.15; scripts/ingest/pagebreak-sample.ts, `pnpm ingest referee draft`). Population: every page turn, the last line of running text on the old page and the first on the new (pdftohtml -xml; notes, running heads and folios left out). 15 drawn by a seeded shuffle (stratum random), then 5 from each confidence tier of the layout rules at @rtm/ingest v0.21.0 (stratum tier-low/medium/high; a short tier topped up from the others). Each break was answered from the rendered page images (the foot of the old page, the head of the new one), blind to the rules' call: does a new block (paragraph, bullet, numbered paragraph, quotation, heading) start between the two lines, or does the block run on? prev and next are the running-text lines either side; when notes, a caption or a heading stand between, the verdict says whether the paragraph's text continues on the new page, and `between` names what stands between. `set` assigns the break to development or held-out (alternating within each stratum, seeded); `tier` and `rule` are the rules' call at v0.21.0 when drawn."
+seed: "38s.15"
+breaks:
+  - page: 60
+    prev: "approximately $59 billion, or 47 percent, of the home loans on WaMu’s balance sheet at the end "
+    next: "of 2007.”109  The retail channel was also used to originate substantial numbers of home equity "
+    verdict: join
+    stratum: random
+    set: held-out
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    note: "sentence runs on: 'at the end / of 2007'"
+  - page: 92
+    prev: "audit report nevertheless provided a detailed and negative review of its operations: "
+    next: "“[T]he overall system of risk management and internal controls has deficiencies related to "
+    verdict: split
+    stratum: tier-medium
+    set: held-out
+    tier: medium
+    rule: "split: finished, next line flush"
+    between: notes
+    image: true
+    note: "intro ends with colon; new indented block quotation starts"
+  - page: 107
+    prev: "believed that David Schneider “was made aware of these findings” and wanted Risk Mitigation "
+    next: "to “monitor the situation.”341  But no one knew “of additional monitoring that was done, or "
+    verdict: join
+    stratum: random
+    set: dev
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    note: "sentence unfinished: 'wanted Risk Mitigation / to monitor'"
+  - page: 188
+    prev: "particularly with respect to stated income lending.  Based on our current findings, and the "
+    next: "fact that a number of similar concerns were raised at prior examinations, we concluded "
+    verdict: join
+    stratum: tier-high
+    set: held-out
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    note: "same block quotation continues mid-sentence"
+  - page: 211
+    prev: "letter denying the request and stating that OTS would instead “share our exam findings with the "
+    next: "FDIC, as we have in the past.”779"
+    verdict: join
+    stratum: tier-low
+    set: held-out
+    tier: low
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    note: "quoted phrase runs on: 'with the / FDIC'"
+  - page: 216
+    prev: "Mr. Rymer:  I would agree with Mr. Thorson.  ...  "
+    next: "Senator Coburn:  [To Mr. Thorson] By your statement, it would imply almost that OTS is "
+    verdict: split
+    stratum: tier-medium
+    set: dev
+    tier: medium
+    rule: "split: finished, next line flush"
+    between: notes
+    image: true
+    note: "new speaker in transcript (Senator Coburn)"
+  - page: 227
+    prev: "FDIC officials told the Subcommittee that the FDIC expected banks to come into immediate "
+    next: "compliance with the Guidance, and that no agency should have been telling a bank that it did not "
+    verdict: join
+    stratum: random
+    set: dev
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    note: "sentence unfinished: 'immediate / compliance'"
+  - page: 246
+    prev: "2008; the SEC’s action against Countrywide in June 2009; and the SEC’s action against New "
+    next: "Century in December 2009.  By putting an early end to Fremont’s subprime lending, the FDIC "
+    verdict: join
+    stratum: tier-low
+    set: held-out
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    drawn: "low; ank was then sold to CapitalSource, Inc. / Century in December 2009.  By putting an"
+    note: "drawn prev was footnote 942 text misplaced in text layer; real last body line is 'action against New' -> 'Century'"
+  - page: 247
+    prev: "revised interagency agreement strengthening the FDIC’s ability to conduct examinations of "
+    next: "insured depository institutions and a new FDIC deposit insurance pricing system that requires "
+    verdict: join
+    stratum: random
+    set: held-out
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    note: "sentence unfinished: 'examinations of / insured'"
+  - page: 303
+    prev: "later transactions, and create precedents that investment banks invoked in subsequent "
+    next: "securitizations.  CRA analysts were then compelled to decide whether to follow an earlier "
+    verdict: join
+    stratum: random
+    set: held-out
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    note: "sentence unfinished: 'in subsequent / securitizations'"
+  - page: 313
+    prev: "raised at rating Committees.”1185"
+    next: "A Moody’s managing director responsible for supervising CDO analysts put it this way in a 2007 "
+    verdict: split
+    stratum: tier-medium
+    set: dev
+    tier: medium
+    rule: "split: finished, next line flush"
+    between: notes
+    image: true
+    note: "block quotation ends at foot; flush-left prose resumes on new page (return from quotation)"
+  - page: 337
+    prev: "securities. "
+    next: "B.  Running the CDO Machine:   "
+    verdict: split
+    stratum: random
+    set: dev
+    tier: high
+    rule: "split: next opens on a label"
+    between: none
+    image: true
+    above: "substantial conflicts of interest to profit at the expense of its clients in the sale of RMBS and CDO"
+    drawn: "high;  its clients in the sale of RMBS and CDO / B.  Running the CDO Machine:"
+    note: "last line of old page is 'securities.'; rest of page blank; new page opens with heading B."
+  - page: 348
+    prev: "CDO securities and most people believed in the ratings, he did not.  He also told the "
+    next: "Subcommittee that he “told his views to anyone who would listen” but most CDO investors  "
+    verdict: join
+    stratum: tier-low
+    set: dev
+    tier: low
+    rule: "split: unfinished, but a short last line"
+    between: notes
+    image: true
+    note: "sentence unfinished: 'told the / Subcommittee'"
+  - page: 354
+    prev: "CDO jobs involved.  In August 2006, for example, Mr. Lippmann wrote:  "
+    next: "“Why have we done this?  It is not without reluctance and we are looking for ways to get "
+    verdict: split
+    stratum: tier-medium
+    set: dev
+    tier: medium
+    rule: "split: finished, next line flush"
+    between: notes
+    image: true
+    note: "intro ends 'wrote:'; new block quotation starts"
+  - page: 360
+    prev: "  HBK told investors in its sales presentation that “HBK has retained 100% of the equity "
+    next: "from CDO transactions resulting in strong alignment of interests between HBK and "
+    verdict: join
+    stratum: tier-high
+    set: dev
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    note: "quoted sentence unfinished: 'the equity / from CDO transactions'"
+  - page: 369
+    prev: "to its customers. "
+    next: "Mr. Lippmann expressed a negative outlook for other assets as well, including SABR "
+    verdict: split
+    stratum: random
+    set: dev
+    tier: high
+    rule: "split: finished"
+    between: notes
+    image: true
+    note: "paragraph ends; new page starts with indented paragraph"
+  - page: 387
+    prev: "which included both the FICC Division and the Equities Division.1529  In mid-2007, Mr. Sparks"
+    next: "began reporting to Donald Mullen, who was head of U.S. Credit Sales & Trading, and Mr."
+    verdict: join
+    stratum: random
+    set: dev
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    note: "sentence unfinished: 'Mr. Sparks / began reporting'"
+  - page: 403
+    prev: "positions to investors, but also as a way for Goldman itself to short mortgage assets in bulk.1602"
+    next: "Abacus 2007-AC1 was the first and only Abacus transaction in which Goldman allowed a"
+    verdict: split
+    stratum: tier-high
+    set: held-out
+    tier: high
+    rule: "split: finished"
+    between: notes
+    image: true
+    note: "paragraph ends; new page starts with indented paragraph 'Abacus 2007-AC1...'"
+  - page: 453
+    prev: "Sheets.1854  Goldman’s Mortgage Department kept records of its overall net short positions across"
+    next: "various subprime asset classes on a daily basis throughout most of 2007.1855  Those records indicate"
+    verdict: join
+    stratum: random
+    set: dev
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    note: "sentence unfinished: 'positions across / various'"
+  - page: 471
+    prev: "they would have to cover $2 billion in subprime mortgage related net short positions that same"
+    next: "day.1938   On February 27, 2007, Mr. Ruzika wrote Mr. Sparks and others:  “I want to see us getting"
+    verdict: join
+    stratum: tier-high
+    set: dev
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    note: "sentence unfinished: 'that same / day.'"
+  - page: 478
+    prev: "the Mortgage Crisis?  Our Response.”1982  The statement was prepared for Mr. Viniar’s use in"
+    next: "responding to questions about the Mortgage Department’s performance in a fourth quarter"
+    verdict: join
+    stratum: tier-high
+    set: dev
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    note: "sentence unfinished: 'use in / responding'"
+  - page: 507
+    prev: "Japan.2111"
+    next: "CDO Sales in Asia.  On June 11, 2007, Mr. Lehman received a note from the Mortgage"
+    verdict: split
+    stratum: random
+    set: held-out
+    tier: high
+    rule: "split: finished"
+    between: notes
+    image: true
+    above: "Lehman announced the sale of $20 million in AAA Timberwolf securities to Tokyo Star Bank in"
+    drawn: "high; berwolf securities to Tokyo Star Bank in / CDO Sales in Asia.  On June 11, 2007, Mr"
+    note: "drawn prev was second-to-last line; paragraph ends 'Japan.2111'; new page starts indented run-in heading 'CDO Sales in Asia.'"
+  - page: 519
+    prev: "agencies too?"
+    next: "Mr. Sparks:  Well, I generally feel that the disclosure for the new issues that Goldman Sachs"
+    verdict: split
+    stratum: random
+    set: held-out
+    tier: medium
+    rule: "split: finished, next line flush"
+    between: notes
+    image: true
+    above: "... was given to the investors, all of the information that was out there, and the credit rating"
+    note: "new speaker in transcript (Mr. Sparks)"
+  - page: 569
+    prev: "Trading Desk employee who led the effort on the Abacus CDO for Paulson, was even more blunt:"
+    next: "“Gerstie and I are finishing up engagement letters ... for the large RMBS CDO Abacus trade"
+    verdict: split
+    stratum: tier-medium
+    set: held-out
+    tier: medium
+    rule: "split: finished, next line flush"
+    between: notes
+    image: true
+    note: "intro ends with colon; new block quotation starts"
+  - page: 570
+    prev: "finding a manager that:"
+    next: "“will be flexible w.r.t. [with respect to] portfolio selection (i.e. ideally we will send them a"
+    verdict: split
+    stratum: random
+    set: dev
+    tier: medium
+    rule: "split: finished, next line flush"
+    between: notes
+    image: true
+    note: "intro ends 'a manager that:'; block quotation starts (continues the sentence syntactically but is a separate indented quote block)"
+  - page: 585
+    prev: "marketing booklet, for example, told potential investors: "
+    next: "“Hudson CDOs are non-managed and static in nature and provide term non-recourse funding"
+    verdict: split
+    stratum: random
+    set: held-out
+    tier: medium
+    rule: "split: finished, next line flush"
+    between: notes
+    image: true
+    note: "intro ends with colon; new block quotation starts"
+  - page: 619
+    prev: "There is no trouble in your mind –  "
+    next: "Mr. Blankfein:  Senator, I am sorry.  I can’t endorse your characterization. "
+    verdict: split
+    stratum: tier-low
+    set: dev
+    tier: low
+    rule: "split: unfinished, no line under next"
+    between: notes
+    image: true
+    note: "new speaker in transcript (Mr. Blankfein)"
+  - page: 623
+    prev: "100% of the short side of the CDO.   "
+    next: "Goldman did not accurately or fully disclose its short interest in Hudson, Anderson, or "
+    verdict: split
+    stratum: random
+    set: held-out
+    tier: high
+    rule: "split: finished"
+    between: notes
+    image: true
+    note: "paragraph ends; new page starts with indented paragraph"
+  - page: 629
+    prev: "the asset selection process and hired a well known third party portfolio agent, ACA "
+    next: "Management, to “leverage ACA’s credibility.”2760  In Hudson, Goldman omitted that it had "
+    verdict: join
+    stratum: tier-low
+    set: dev
+    tier: low
+    rule: "split: unfinished, but a short last line"
+    between: notes
+    image: true
+    note: "sentence unfinished: 'ACA / Management'"
+  - page: 641
+    prev: "that focused, in part, on criteria that can be used to distinguish between proprietary and market "
+    next: "making activities.2823  Applying those recently developed criteria to the Mortgage Department’s "
+    verdict: join
+    stratum: random
+    set: dev
+    tier: high
+    rule: "R1: unfinished, next line flush"
+    between: notes
+    image: true
+    note: "sentence unfinished: 'and market / making activities'"
