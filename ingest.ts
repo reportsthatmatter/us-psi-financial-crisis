@@ -1,4 +1,4 @@
-import { layoutMarkers, layoutPageJoins, quoteListRunOns, listedHeadings, citationRunOver, escapeLeadingHash, footnoteGap, romanFolios, pipeline } from "@rtm/ingest";
+import { layoutMarkers, layoutPageJoins, quoteListRunOns, listedHeadings, citationRunOver, escapeLeadingHash, strandedMarkers, footnoteGap, romanFolios, pipeline } from "@rtm/ingest";
 
 /**
  * How this report is built. Owned by the report: every decision that shaped
@@ -25,6 +25,11 @@ export default pipeline({
     // Footnote markers are raised digits flush against a closing quotation mark or word ("IS.”1410"):
     // link them from the layout, to a note on the same page, in sequence (reportsthatmatter-b94).
     layoutMarkers(),
+    // A marker raised over a line's first word reads as a line of its own and
+    // splits the paragraph ("oversight / 288 / efforts."): put it back after
+    // the word, where layoutMarkers links it (notes 216, 288, 1032, 1104;
+    // reportsthatmatter-kvxj).
+    strandedMarkers(),
     // A quotation running over a page arrives as two (reportsthatmatter-38s.9).
     quoteListRunOns(),
     // The report quotes exhibits whose captions and memo lines look like

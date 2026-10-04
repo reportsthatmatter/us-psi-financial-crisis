@@ -16,4 +16,9 @@
 #     reason: small-font OCR; checked against the scan
 #     added: 2026-08-28
 version: 1
-corrections: []
+corrections:
+  - id: c-0001
+    find: "$1 billion profit.2755 In July 2010"
+    replace: "$1 billion profit.[^2755] In July 2010"
+    reason: "note 2755's marker is set in the body's own face, not raised (PDF p.628, pdftohtml shows the same font as the body), so no marker pass can tell it from a number; checked against the PDF (reportsthatmatter-kvxj)"
+    added: 2026-10-04
