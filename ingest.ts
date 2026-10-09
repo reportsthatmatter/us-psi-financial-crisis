@@ -1,4 +1,4 @@
-import { layoutMarkers, layoutPageJoins, quoteListRunOns, listedHeadings, citationRunOver, escapeLeadingHash, strandedMarkers, footnoteGap, romanFolios, pipeline } from "@rtm/ingest";
+import { noteFaceRunOver, typographicHeadings, layoutMarkers, layoutPageJoins, quoteListRunOns, listedHeadings, citationRunOver, escapeLeadingHash, strandedMarkers, footnoteGap, romanFolios, pipeline } from "@rtm/ingest";
 
 /**
  * How this report is built. Owned by the report: every decision that shaped
@@ -44,6 +44,7 @@ export default pipeline({
     // paragraph that dense joins the run-over; the first that reads as
     // ordinary prose stops it.
     citationRunOver(),
+    noteFaceRunOver(),
     // The press release's end mark "# # #" opened a paragraph and rendered as
     // a heading. Needs the @rtm/ingest release that carries escapeLeadingHash
     // (ingest PR #26, reportsthatmatter-6zo).
@@ -57,5 +58,6 @@ export default pipeline({
     // in the text. Needs the @rtm/ingest release that carries romanFolios
     // (reportsthatmatter-cbr).
     romanFolios(),
+    typographicHeadings({ faces: [["TimesNewRoman,Bold|19|#000000|b"]], firstLevel: 4, quotedRemainder: true }),
   ],
 });
