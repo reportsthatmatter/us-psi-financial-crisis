@@ -21,8 +21,6 @@ pages:
     printed: 62
     verified_by: "Claude (Sonnet 5.5), 2026-10-02, against the page image"
     features: [I, D]
-    xfail: reportsthatmatter-bi5
-    xfail_only: [blocks]
     blocks:
       - heading: "(3) Definition of High Risk Lending"
       - paragraph: {start: "As part of the 2005 presentation to the Board of Directors", end: "defining “Higher Risk Lending”:", notes: [159]}
@@ -58,8 +56,6 @@ pages:
     printed: 167
     verified_by: "Claude (Sonnet 5.5), 2026-10-02, against the page image"
     features: [A, I, E]
-    xfail: reportsthatmatter-bi5
-    xfail_only: [blocks, must_not_be_quote]
     blocks:
       - paragraph: {start: "For the eight largest insured institutions at the time", end: "to oversee the bank."}
       - paragraph: {start: "During the years examined by the Subcommittee", end: "Stephen Funaro."}
@@ -102,8 +98,6 @@ pages:
     printed: 432
     verified_by: "Claude (Sonnet 5.5), 2026-10-02, against the page image"
     features: [E, D]
-    xfail: reportsthatmatter-07k
-    xfail_only: [blocks, must_not_contain]
     blocks:
       - paragraph: {start: "On June 8, 2007, Mr. Sparks received an urgent early morning email", end: "The CDO unwind has only begun.”", notes: [1771, 1772, 1773]}
       - paragraph: {start: "Around June 12, 2007, public news accounts indicated", end: "total collapse.", notes: [1774, 1775]}
