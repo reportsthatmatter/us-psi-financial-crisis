@@ -21,4 +21,6 @@ The code that builds the text (ingest.ts and other TypeScript, JavaScript and Py
 Other files
 -----------
 
+Files under archive/ are copies of the report as its publisher issued it, kept so the text can be rebuilt and checked; they have the status described in section 1.
+
 Files under reference/ are copies of other editions of the report, kept to measure our text. They keep the licence recorded for them (in reference/manifest.json where one exists, or section 1 where this file says so) and are not covered by sections 2 and 3.
