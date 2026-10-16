@@ -18,9 +18,9 @@ Come from the Senate website at [https://www.hsgac.senate.gov/subcommittees/inve
 
 See the datapackage.json for details.
 
-## License
+## Licence
 
-Federal government and so public domain.
+Text of the report: Public domain: a work of the United States Government (17 U.S.C. § 105). Our markup, processing and editorial additions: CC BY 4.0. Code: MIT. Evidence, caveats and the full statement are in [LICENSE](LICENSE); the MIT text is in [LICENSE-MIT](LICENSE-MIT).
 
 ## Rebuilding the text
 
