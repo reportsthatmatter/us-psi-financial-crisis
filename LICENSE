@@ -1,0 +1,26 @@
+Licences in this repository
+===========================
+
+This repository holds a public report, the text we derive from it, and the code that builds that text. They have three different statuses. This file is a statement of those statuses, not legal advice.
+
+1. The report's text
+--------------------
+
+The report of the US Senate Permanent Subcommittee on Investigations, "Wall Street and the Financial Crisis: Anatomy of a Financial Collapse" (2011), was written by Senate staff and published by the Senate and the Government Publishing Office. A work of the United States Government is not subject to copyright in the United States (17 U.S.C. § 105). Material the report reproduces from third parties is not covered by this statement. The exhibits and documents the report quotes (emails, memoranda, filings) were produced by private parties; we make no claim about their status.
+
+2. Our markup, processing and editorial additions
+-------------------------------------------------
+
+The structure and Markdown formatting of full.md, paragraph and section identifiers, corrections.yaml, golden.yaml, baseline.json, fidelity.md, PROCESSING.md, datapackage.json, the README and any other words we wrote are licensed under the Creative Commons Attribution 4.0 International licence (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/legalcode). Attribute them to "Reports that Matter (https://reportsthatmatter.org)". This does not change the status of the report's own text, described in section 1, which we do not own.
+
+3. Code
+-------
+
+The code that builds the text (ingest.ts and other TypeScript, JavaScript and Python files, and package.json) is licensed under the MIT licence; see LICENSE-MIT, Copyright (c) 2026 Rufus Pollock and contributors.
+
+Other files
+-----------
+
+Files under archive/ are copies of the report as its publisher issued it, kept so the text can be rebuilt and checked; they have the status described in section 1.
+
+Files under reference/ are copies of other editions of the report, kept to measure our text. They keep the licence recorded for them (in reference/manifest.json where one exists, or section 1 where this file says so) and are not covered by sections 2 and 3.
